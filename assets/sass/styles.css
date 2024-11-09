@@ -131,7 +131,7 @@ body {
 
   /* justify-self: start; */
 
-  margin-right: 7.5%;
+  margin-right: 56.8%;
 
   display: flex;
   flex-direction: column;
@@ -143,7 +143,8 @@ body {
 
   /* max-width: 65%;
   min-width: 65%; */
-  width: 45%;
+  width: 38%;
+  /* min-width:10em */
 
   /* border: 1px solid black; */
 }

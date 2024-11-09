@@ -13,7 +13,7 @@ board.onclick = function(event){
 
     if(oldSelectedElement) oldSelectedElement.style.backgroundColor = '#f5f5f5';
 
-    console.log(oldSelectedElement);
+    console.log(target);
 
     target.style.backgroundColor = 'red';
     oldSelectedElement = target;

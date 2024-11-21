@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chess</title>
-    <link href="./assets/sass/styles.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/sass/reset.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/reset.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <h2 class="name">Chess online</h2>
@@ -21,25 +21,7 @@
         <div>7</div>
         <div>8</div>
       </div>
-      <div class="board">
-        <div myProperty="ok" class="cell"><img src="./assets/png/rook_b.png" alt="Чёрная тура" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/bishop_b.png" alt="Чёрный слон" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/knight_b.png" alt="Чёрный конь" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/queen_b.png" alt="Чёрная королева" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/king_b.png" alt="Чёрный король" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/knight_b.png" alt="Чёрный конь" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/bishop_b.png" alt="Чёрный слон" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/rook_b.png" alt="Чёрная тура" class="figure" /></div>
-
-        <div class="cell black-cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>        
-        <div class="cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/pawn_b.png" alt="Чёрная пешка" class="figure" /></div>
-
+      <div id="board" class="board">
         <div class="cell"></div>
         <div class="cell black-cell"></div>
         <div class="cell"></div>
@@ -49,7 +31,7 @@
         <div class="cell"></div>
         <div class="cell black-cell"></div>
 
-        <div class="cell black-cell"></div>
+        <div class="cell black-cell"></div>        
         <div class="cell"></div>
         <div class="cell black-cell"></div>
         <div class="cell"></div>
@@ -76,23 +58,41 @@
         <div class="cell black-cell"></div>
         <div class="cell"></div>
 
-        <div class="cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/pawn_w.png" alt="Белая пешка" class="figure" /></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
         
-        <div class="cell black-cell"><img src="./assets/png/rook_w.png" alt="Чёрная тура" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/bishop_w.png" alt="Чёрный слон" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/knight_w.png" alt="Чёрный конь" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/queen_w.png" alt="Чёрная королева" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/king_w.png" alt="Чёрный король" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/knight_w.png" alt="Чёрный конь" class="figure" /></div>
-        <div class="cell black-cell"><img src="./assets/png/bishop_w.png" alt="Чёрный слон" class="figure" /></div>
-        <div class="cell"><img src="./assets/png/rook_w.png" alt="Чёрная тура" class="figure" /></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
+        <div class="cell black-cell"></div>
+        <div class="cell"></div>
     </div>
       <div class="right"></div>
       <div class="down">
@@ -114,6 +114,9 @@
       <div class="move-field"></div>
     </div>
 
-    <script src="./assets/js/dom.js"></script>
+    <script type="module" src="./assets/js/dom.js"></script>
+    <script type="module" src="./assets/js/initial.js"></script>
+    <script type="module" src="./assets/js/eventListeners.js"></script>
+    <scriot type="module" src="./assets/js/index.js"></scriot>
   </body>
 </html>

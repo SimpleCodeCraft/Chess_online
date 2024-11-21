@@ -1,32 +1,19 @@
 'use strict';
 
-const board = document.getElementsByClassName('board')[0];
+const tempBoard = [...(document.getElementById('board')).children];
+const board = [[]];
 
-console.log(board);
+for(let i = 0, count = 0; count < 64; i++){
+  board[i] = [];
+  for(let j = 0; j < 8; j++){
+    board[i].push(tempBoard[count]);
+    count++;
+  }
+}
+
+export {board};
 
 let oldSelectedElement;
 
-board.onclick = function(event){
-    let target = event.target; // где был клик?
-
-    // if (target.tagName != 'TD') return; // не на TD? тогда не интересует
-
-    if(oldSelectedElement) oldSelectedElement.style.backgroundColor = '#f5f5f5';
-
-    console.log(target);
-
-    target.style.backgroundColor = 'red';
-    oldSelectedElement = target;
-}
 
 
-function highlight(td) {
-    if (td.classList.high) { // убрать существующую подсветку, если есть
-      selectedTd.classList.remove('highlight');
-    }
-    selectedTd = td;
-    selectedTd.classList.add('highlight'); // подсветить новый td
-  }
-  
-
- 

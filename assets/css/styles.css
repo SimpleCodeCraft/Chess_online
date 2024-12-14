@@ -16,6 +16,7 @@ body {
 
 .name {
   grid-row: 1 / 2;
+  margin-top: 8%;
   font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
   grid-column: 2 / 3;
@@ -29,13 +30,15 @@ body {
   width: 71vh;
   max-width: 71vh;
   max-height: 71vh;
+  
+  margin-bottom: 1rem;
 
   display: grid;
   grid-template-columns: 1fr 13fr 1fr;
   grid-template-rows: 1fr 13fr 1fr;
 
   border: 1px solid black;
-  background-color: #E7CFA9;
+  background-color: #EDBD71;
 }
 
 .board {
@@ -47,7 +50,7 @@ body {
 }
 
 .black-cell{
-  background-color: #927557;
+  background-color: #A4713C;
 }
 
 .board * {
@@ -144,7 +147,7 @@ body {
   /* max-width: 65%;
   min-width: 65%; */
   width: 38%;
-  /* min-width:10em */
+  min-width:4em
 
   /* border: 1px solid black; */
 }
@@ -175,4 +178,16 @@ body {
 
 .highlight{
   background-color: red;
+}
+
+
+.hover{
+  width: 97%;
+  height: 97%;
+  border: 1px solid white;
+  background-color: rgba(173, 161, 149, 0.385);
+}
+
+.transparent{
+  opacity: 0.65;
 }
